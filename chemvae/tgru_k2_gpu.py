@@ -67,7 +67,7 @@ from keras.engine import InputSpec
 import numpy as np
 
 if K.backend() == 'tensorflow':
-    from .sampled_rnn_tf import sampled_rnn
+    from sampled_rnn_tf import sampled_rnn
 else:
 
     raise NotImplemented("Backend not implemented")
